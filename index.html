@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+  <meta name='x-apple-disable-message-reformatting'>
+  <meta http-equiv='x-ua-compatible' content='ie=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+  <meta name='format-detection' content='telephone=no, date=no, address=no, email=no'>
+  <title>Tapp Caja los Andes</title>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600' rel='stylesheet'>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #000000;
+      font-family: 'Montserrat', sans-serif !important;
+      font-style: normal;
+    }
+    html { -webkit-print-color-adjust: exact; }
+    header {
+        height: 88px;
+        background: linear-gradient(to right, #002760 5.58%, #00ACB1 156.8%);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0 59px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .table-container {
+      margin: 0 auto;
+      padding: 0 19px;
+    }  
+
+    .td-top {
+      padding-top: 20px;
+    }
+    
+    .text-p1 {
+      color: #005795;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+      margin-top: 20px;
+      text-align: center;
+    }
+    
+    .text-p2 {
+      color: #005795;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px; 
+    }
+
+    .text-p3 {
+      color: #44BCD2;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 36px;
+    }  
+
+    .text-p4 {
+      color: #005795;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+    }
+
+    .text-p5 {
+      color: #005795;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      width: 139px; 
+    }
+
+    .table-cell {
+      box-sizing: border-box; 
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .td-sin-correo {
+      background-color: #fff;
+      border-radius: 12px;
+      height: 106px;
+      width: 336px;
+    }
+
+    .text-p6 {
+      color: #7E7E7E    ;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      width: 200px;
+      overflow: hidden;
+      text-overflow: ellipsis; 
+      white-space: nowrap; 
+      word-wrap: break-word;
+    }
+
+    .mb-12 {
+      margin-bottom: 12px;
+    }
+
+    .mb-24 {
+      margin-bottom: 24px;
+    }
+
+    .mb-40 {
+      margin-bottom: 40px;
+    }
+
+  </style> 
+</head>
+<body style='background-color: white;'>
+    <header>
+        <img valign='middle' src='https://images.ctfassets.net/mgd9ws2wukhr/50tGJrksDP3C4N6OH3H5i6/a3b14386eae8b7a31c111f427053ade1/logo-detail.svg'  alt='tapp_logo' class="tapp-logo"/>   
+    </header>
+  <table class='table-container' cellpadding='0' cellspacing='0'>
+    <tr>
+      <td class='td-top' width='100%' align='center'> 
+        <img valign='middle' src='https://images.ctfassets.net/mgd9ws2wukhr/1s7xKrzQz5bh7pZKrtlLHT/7013ddcaebfe07edcd259d4984225958/circle-check.svg' width='72px' height='72px' alt='img_check'/> 
+        <p class='text-p1 mb-24'>¡La transferencia se ha realizado con éxito!</p>
+        <p class='text-p2'>Monto a transferir</p>
+        <p class='text-p3'>{Amount}</p>
+        <p class='text-p2 mb-40'>a {UserNameReceiver}</p>
+      </td>
+    </tr>
+    <tr>
+        <td> 
+          <div style='width: 100%; height: 100%; border: 1px #EAEAEA solid; margin: 19px 0 16px 0;'></div>
+        </td>
+      </tr>
+    <tr>
+      <td class='table-cell'>
+        <p class='text-p4 mb-24'>Desde</p>
+        <p class='text-p5 mb-12'>Nombre</p>
+        <p class='text-p5 mb-12'>RUT</p>
+        <p class='text-p5 mb-12'>Tipo de cuenta</p>
+        <p class='text-p5 mb-12'>N° de cuenta</p>
+        <p class='text-p5 mb-12'>Correo</p>
+        <p class='text-p5'>Comentario</p>
+      </td>
+      <td class='table-cell'>
+        <p class="mb-24">&nbsp;</p>
+        <p class='text-p6 mb-12'>{UserNameOrigin}</p>
+        <p class='text-p6 mb-12'>{RUTOrigin}</p>
+        <p class='text-p6 mb-12'>{AccountTypeOrigin}</p>
+        <p class='text-p6 mb-12'>{AccountNumberOrigin}</p>
+        <p class='text-p6 mb-12'>{EmailOrigin}</p>
+        <p class='text-p6'>{Description}</p>
+      </td>
+      <td class='table-cell'>
+        <p class='text-p4 mb-24'>Para</p>
+        <p class='text-p5 mb-12'>Nombre</p>
+        <p class='text-p5 mb-12'>RUT</p>
+        <p class='text-p5 mb-12'>Banco</p>
+        <p class='text-p5 mb-12'>Tipo de cuenta</p>
+        <p class='text-p5 mb-12'>N° de cuenta</p>
+        <p class='text-p5 mb-12'>Correo</p>
+      </td>
+      <td class='table-cell'>
+        <p class="mb-24">&nbsp;</p>
+        <p class='text-p6 mb-12'>{UserNameReceiver}</p>
+        <p class='text-p6 mb-12'>{RUTReceiver}</p>
+        <p class='text-p6 mb-12'>{BankReceiver}</p>
+        <p class='text-p6 mb-12'>{AccountTypeReceiver}</p>
+        <p class='text-p6 mb-12'>{AccountNumberReceiver}</p>
+        <p class='text-p6'>{EmailReceiver}</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td class='td-sin-correo table-cell' style="margin-top: 28px;">
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
